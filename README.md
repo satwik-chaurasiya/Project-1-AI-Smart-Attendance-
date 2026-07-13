@@ -1,5 +1,3 @@
-Hello Everyone,
-I'm **Satwik Chaursiya**, a **Engineering Student at Greater Noida Institute of Technology / Vibe Coder** passionate about building practical computer vision and machine learning applications. I focus on developing clean, efficient code that solves real-world operational problems—like automating manual workflows and improving security systems.
 ---
 # AI-Based Smart Attendance Monitoring System
 ---
