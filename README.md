@@ -37,3 +37,10 @@ Project-1/
 └── unknown_faces/             # Generated: Folder containing snapshots of unrecognized faces
 ```
 ---
+##Some Screenshot
+---
+<img width="582" height="207" alt="image" src="https://github.com/user-attachments/assets/91de7a12-17ca-4d5b-aed0-d9c96e16d233" />
+<img width="435" height="112" alt="image" src="https://github.com/user-attachments/assets/6ab2b43a-6a70-4bb2-8cc5-cd31e4d2c3d9" />
+<img width="732" height="95" alt="image" src="https://github.com/user-attachments/assets/a0b8d602-ca08-4b66-839d-12f6413380db" />
+<img width="732" height="95" alt="image" src="https://github.com/user-attachments/assets/ddcd8963-2f3b-434c-aeac-3e4f5bbf7846" />
+
