@@ -37,10 +37,45 @@ Project-1/
 └── unknown_faces/             # Generated: Folder containing snapshots of unrecognized faces
 ```
 ---
-##Some Screenshot
+##⚙️ Methodology & How to Use 
 ---
-<img width="582" height="207" alt="image" src="https://github.com/user-attachments/assets/91de7a12-17ca-4d5b-aed0-d9c96e16d233" />
-<img width="435" height="112" alt="image" src="https://github.com/user-attachments/assets/6ab2b43a-6a70-4bb2-8cc5-cd31e4d2c3d9" />
-<img width="732" height="95" alt="image" src="https://github.com/user-attachments/assets/a0b8d602-ca08-4b66-839d-12f6413380db" />
-<img width="732" height="95" alt="image" src="https://github.com/user-attachments/assets/ddcd8963-2f3b-434c-aeac-3e4f5bbf7846" />
 
+**Follow these execution steps in precise order to set up your environment:**
+
+**Step 1:** Register User ProfilesRun the registration script to record a new student profile. The script will request a unique ID and name, run a validation check against duplicates, and use your camera to collect 50 grayscale cropped facial matrices.
+---
+
+---
+<img width="582" height="207" alt="image" src="https://github.com/user-attachments/assets/6d447d91-e93d-4d2a-8287-228e46fc18b4" />
+---
+
+
+
+```Bash
+python face_registration.py
+```
+Note: If a name is already taken, the system gracefully generates an alert but permits registration by pinning it to a unique ID.
+<img width="732" height="95" alt="image" src="https://github.com/user-attachments/assets/1f8c7a5a-9411-46e7-a866-e4b8a9655a9f" />
+
+---
+**Step 2:** Train the ModelCompile the dataset images into an optimized machine learning data matrix. This builds the trainer.yml file.
+---
+<img width="900" height="57" alt="image" src="https://github.com/user-attachments/assets/c0be6324-6209-41ad-bcc3-45e964518332" />
+
+```Bash
+python model_training.py
+```
+---
+Step 3: Launch the Attendance MonitorStart the live monitoring station. The camera frame will open, highlighting known profiles in Green (automatically logging their timestamped arrival in attendance.csv) and unknown faces in Red.
+---
+
+```Bash
+python attandence_marking.py
+```
+---
+To exit the camera application: Press the q key on your keyboard while focusing on the video screen.📊 Sample Output LogsWhen attendance is captured, it updates the attendance.csv sheet cleanly:
+---
+
+<img width="435" height="112" alt="image" src="https://github.com/user-attachments/assets/e357af75-b8d3-4282-b6f2-513f2aa47689" />
+
+---
